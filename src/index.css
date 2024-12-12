@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #442a00;
+  --secondary-color: #d84012;
+  --accent-color: #fcce0b;
+  --light-grey: #f5f5f5;
+  --white-full: #ffffff;
+  --font-color: #3a3a3a;
+}
+
+@font-face {
+  font-family: "Ahsing";
+  src: local("Ahsing"), url(/assets/fonts/Ahsing.otf), format("opentype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ahsing", sans-serif;
+}
+
+.product-image {
+  width: "100px";
+  height: "200px";
+  object-fit: "cover";
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.product-image:hover{
+    transform: scale(1.05);
+}
